@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>registration form for team registration for the BGMI tournament</title>
+</head>
+	<body>
+	<h2>please fill the form</h2>
+	<form action="/action_page.php">
+	<h3>team details and prefrences</h3>
+	<label for="tname">Team name:</label><br>
+	<input type="text" id="tname" name="tname"><br><br>
+	<h3>no. of players in team</h3>
+	<fieldset>
+	<label for="tno">number of players in team:</label>
+ 	<select name="tno" id="tno" multiple>
+    	<option value="2">2</option>
+    	<option value="3">3</option>
+    	<option value="4">4</option>
+    	<option value="5">5</option></select>
+	</fieldset>
+
+	<h3>enter the prespective you want to play in</h3>
+	<input type="radio" id="tpp" name="prespective" value="tpp">
+	<label for="tpp">tpp</label><br>
+	<input type="radio" id="fpp" name="prespective" value="fpp">
+	<label for="fpp">fpp</label><br>
+	
+	<h3>player UID</h3>
+	<fieldset>
+    		<legend>UID:</legend>
+    		<label for="uid1">First player Id:</label><br>
+    		<input type="number" id="uid1" name="uid1"value="player1"><br>
+    		<label for="uid2">Second player Id:</label><br>
+    		<input type="number" id="uid2" name="uid2"value="player2"><br>
+		<label for="uid3">third player Id:</label><br>
+    		<input type="number" id="uid3" name="uid3"value="player3"><br>
+		<label for="uid4">fourth player Id:</label><br>
+    		<input type="number" id="uid4" name="uid4"value="player4"><br>
+ 	</fieldset>
+	
+	<h3>player details</h3>
+	<label for="P1N">PLAYER 1 NAME:</label><br>
+	<input type="text" id="P1N" name="P1N"><br><br>
+	<label for="P1NO">PLAYER 1 PHONE NO.:</label><br>
+	<input type="number" id="P1NO" name="P1NO"><br><br>
+
+	<label for="P2N">PLAYER 2 NAME:</label><br>
+	<input type="text" id="P2N" name="P2N"><br><br>
+	<label for="P2NO">PLAYER 2 PHONE NO.:</label><br>
+	<input type="number" id="P2NO" name="P2NO"><br><br>
+
+	<label for="P3N">PLAYER 3 NAME:</label><br>
+	<input type="text" id="P3N" name="P3N"><br><br>
+	<label for="P1NO">PLAYER 3 PHONE NO.:</label><br>
+	<input type="number" id="P3NO" name="P3NO"><br><br>
+
+	<label for="P4N">PLAYER 4 NAME:</label><br>
+	<input type="text" id="P4N" name="P4N"><br><br>
+	<label for="P4NO">PLAYER 4 PHONE NO.:</label><br>
+	<input type="number" id="P4NO" name="P4NO"><br><br>
+
+	<h3>Payment for registration {payment for 1 team is 1000 rs}.</h3>
+	
+	 <input list="bank transfer" name="bank transfer" value="bank transfer">
+ 		<datalist id="bank transfer">
+   		<option value="HDFC">
+  		<option value="ILLAHBAD bank">
+   		<option value="BOB">
+   		<option value="Axis">
+   		<option value="PNB">
+		</datalist>
+ 	<input list="upi" name="upi" value="upi payment">
+ 		<datalist id="upi">
+   		<option value="Gpay">
+  		<option value="Paytm">
+   		<option value="Phone pe">
+   		<option value="Amazon pay">
+   		<option value="Bharat pe">
+		</datalist><br><br>
+	<input type="submit" value="submit">
+</form>
+</body>
+</html>
